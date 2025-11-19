@@ -44,38 +44,67 @@
         <!-- Add/Edit Product Page -->
         <div id="add-product" class="page">
             <div class="content-area">
-                <h2 class="mb-4">Add Product</h2>
+                <!-- Page Header -->
+                <div class="page-header mb-4">
+                    <div class="header-left">
+                        <h2 class="header-title"><i class="fas fa-plus-circle"></i> Add New Product</h2>
+                        <p class="header-subtitle">Create a new product and add it to your inventory</p>
+                    </div>
+                    <div class="header-right">
+                        <a href="product-list.html" class="btn btn-outline-primary">
+                            <i class="fas fa-arrow-left"></i> Back to Products
+                        </a>
+                    </div>
+                </div>
                 
                 <div class="data-table">
                     <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Product Name</label>
-                            <input type="text" class="form-control" placeholder="Enter product name">
+                        <div class="col-md-6 mb-4">
+                            <div class="form-group-wrapper">
+                                <label class="form-label"><i class="fas fa-tag"></i> Product Name</label>
+                                <input type="text" class="form-control" placeholder="Enter product name">
+                                <small class="form-meta">Give your product a clear, descriptive name</small>
+                            </div>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Category</label>
-                            <select class="form-select">
-                                <option>Select category</option>
-                                <option>Electronics</option>
-                                <option>Furniture</option>
-                                <option>Accessories</option>
-                            </select>
+                        <div class="col-md-6 mb-4">
+                            <div class="form-group-wrapper">
+                                <label class="form-label"><i class="fas fa-list"></i> Category</label>
+                                <select class="form-select">
+                                    <option>Select category</option>
+                                    <option>Electronics</option>
+                                    <option>Furniture</option>
+                                    <option>Accessories</option>
+                                </select>
+                                <small class="form-meta">Choose the most appropriate category for this product</small>
+                            </div>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Price</label>
-                            <input type="number" class="form-control" placeholder="0.00">
+                        <div class="col-md-6 mb-4">
+                            <div class="form-group-wrapper">
+                                <label class="form-label"><i class="fas fa-dollar-sign"></i> Price</label>
+                                <input type="number" class="form-control" placeholder="0.00">
+                                <small class="form-meta">Set the selling price for this product</small>
+                            </div>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Stock Quantity</label>
-                            <input type="number" class="form-control" placeholder="0">
+                        <div class="col-md-6 mb-4">
+                            <div class="form-group-wrapper">
+                                <label class="form-label"><i class="fas fa-boxes"></i> Stock Quantity</label>
+                                <input type="number" class="form-control" placeholder="0">
+                                <small class="form-meta">Current available units in stock</small>
+                            </div>
                         </div>
-                        <div class="col-md-12 mb-3">
-                            <label class="form-label">Description</label>
-                            <textarea class="form-control" rows="4" placeholder="Enter product description"></textarea>
+                        <div class="col-md-12 mb-4">
+                            <div class="form-group-wrapper">
+                                <label class="form-label"><i class="fas fa-align-left"></i> Description</label>
+                                <textarea class="form-control" rows="4" placeholder="Enter product description"></textarea>
+                                <small class="form-meta">Provide detailed information about the product features and benefits</small>
+                            </div>
                         </div>
-                        <div class="col-md-12 mb-3">
-                            <label class="form-label">Product Image</label>
-                            <input type="file" class="form-control">
+                        <div class="col-md-12 mb-4">
+                            <div class="form-group-wrapper">
+                                <label class="form-label"><i class="fas fa-image"></i> Product Image</label>
+                                <input type="file" class="form-control">
+                                <small class="form-meta">Upload a high-quality product image (JPG, PNG)</small>
+                            </div>
                         </div>
                         <div class="col-md-12">
                             <button class="btn btn-primary me-2">Save Product</button>
