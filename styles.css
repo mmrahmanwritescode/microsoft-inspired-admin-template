@@ -472,3 +472,58 @@ body {
 .auth-nav-link.forward-link:hover i {
     transform: translateX(3px);
 }
+/* Topbar Dropdown Menu */
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-item {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: var(--dark-text);
+    transition: all 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-bg);
+    color: var(--primary-color);
+}
+
+.dropdown-item i {
+    color: var(--primary-color);
+    width: 16px;
+    text-align: center;
+}
+
+/* Profile Picture Section */
+.profile-pic-section {
+    padding: 24px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.profile-pic-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(0, 120, 212, 0.1) 0%, rgba(80, 230, 255, 0.1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 48px;
+    border: 2px solid var(--border-color);
+}
