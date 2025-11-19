@@ -242,7 +242,7 @@ body {
 .auth-card {
     background: white;
     border-radius: 12px;
-    padding: 40px;
+    padding: 30px;
     width: 100%;
     max-width: 450px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -425,4 +425,50 @@ body {
 
 .btn-outline-primary i {
     margin-right: 6px;
+}
+
+/* Auth Navigation Links */
+.auth-nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.auth-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.auth-nav-link i {
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+.auth-nav-link:hover {
+    color: var(--primary-hover);
+    text-decoration: none !important;
+}
+
+.auth-nav-link:hover i {
+    transform: translateX(-3px);
+}
+
+.auth-nav-link.back-link i {
+    order: -1;
+}
+
+.auth-nav-link.forward-link i {
+    order: 1;
+}
+
+.auth-nav-link.forward-link:hover i {
+    transform: translateX(3px);
 }

@@ -44,16 +44,25 @@
         <!-- Products List Page -->
         <div id="products" class="page">
             <div class="content-area">
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h2>Products</h2>
-                    <button class="btn btn-primary" onclick="showPage('add-product')">
-                        <i class="fas fa-plus"></i> Add Product
-                    </button>
+                <!-- Page Header -->
+                <div class="page-header mb-4">
+                    <div class="header-left">
+                        <h2 class="header-title"><i class="fas fa-box"></i> Products</h2>
+                        <p class="header-subtitle">Manage and view all your inventory products</p>
+                    </div>
+                    <div class="header-right">
+                        <button class="btn btn-primary" onclick="showPage('add-product')">
+                            <i class="fas fa-plus"></i> Add Product
+                        </button>
+                    </div>
                 </div>
 
                 <div class="data-table">
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Search products...">
+                        <div class="form-group-wrapper">
+                            <input type="text" class="form-control" placeholder="Search products...">
+                            <small class="form-meta"><i class="fas fa-search"></i> Type product name or category to filter results</small>
+                        </div>
                     </div>
                     <table class="table table-hover">
                         <thead>
