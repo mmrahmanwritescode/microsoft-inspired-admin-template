@@ -5,7 +5,7 @@ Overview
 --------
 This repository provides a lightweight, Microsoft-inspired admin dashboard HTML/CSS template designed for quick prototyping and reuse across internal systems. The template focuses on consistent, reusable CSS variables and components (headers, forms, inputs, cards, tables) and uses Bootstrap + Font Awesome for layout and icons.
 
-What we built so far
+What is built so far
 --------------------
 - Consistent design system using CSS variables in `styles.css` (colors, spacing, border colors, sidebar width, etc.).
 - Pages (static HTML):
@@ -65,9 +65,4 @@ License & attribution
 ---------------------
 - This template is a small personal/prototype template. Replace or add a license file if you plan to publish or reuse widely.
 - Bootstrap and Font Awesome are used under their respective licenses (CDN usage). Check their docs for commercial use if required.
-
-If you want, I can:
-- Add a `package.json` and simple npm scripts for a dev server and build flow.
-- Convert CSS to SCSS variables and organize partials.
-- Add small client-side form validation and a demo data JSON for the tables.
 
