@@ -38,13 +38,9 @@ Key files
 
 How to use
 ----------
-1. Open any HTML file directly in your browser (double-click) for quick preview.
-2. For a simple local server (recommended to test dropdowns & relative paths), from the project root run (PowerShell):
-
-```powershell
-# from project folder
-python -m http.server 8000
-# then open http://localhost:8000/dashboard.html
+Download code as zip in your computer. 
+Unzip it to a folder
+Then open any HTML file directly in your browser (double-click) for quick preview.
 ```
 
 3. Edit `styles.css` to change colors or spacing using the CSS variables at the top of the file. The variables are designed to be reused across pages.
